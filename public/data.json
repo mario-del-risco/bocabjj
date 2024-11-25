@@ -1,0 +1,284 @@
+{
+  "classes": {
+    "TinyChampions": [
+      {
+        "startDate": "2024-11-01",
+        "endDate": "2024-11-07",
+        "dailySchedule": {
+          "Monday": {
+            "title": "Kickstart",
+            "description": "Introduction to basic moves."
+          },
+          "Wednesday": {
+            "title": "Building Strength",
+            "description": "Core strength exercises."
+          },
+          "Friday": {
+            "title": "Flow",
+            "description": "Practicing fluidity in movements."
+          }
+        }
+      },
+      {
+        "startDate": "2024-11-08",
+        "endDate": "2024-11-14",
+        "dailySchedule": {
+          "Monday": {
+            "title": "Balance & Coordination",
+            "description": "Fun exercises to improve balance."
+          },
+          "Wednesday": {
+            "title": "Motor Skills",
+            "description": "Developing motor skills through drills."
+          },
+          "Friday": {
+            "title": "Playful Sparring",
+            "description": "Introduction to light sparring."
+          }
+        }
+      },
+      {
+        "startDate": "2024-11-15",
+        "endDate": "2024-11-21",
+        "dailySchedule": {
+          "Monday": {
+            "title": "Basic Movements",
+            "description": "Learning rolls and tumbles."
+          },
+          "Wednesday": {
+            "title": "Agility Drills",
+            "description": "Improving speed and agility."
+          },
+          "Friday": {
+            "title": "Teamwork",
+            "description": "Working with partners on techniques."
+          }
+        }
+      }
+    ],
+    "6-9years old": [
+      {
+        "startDate": "2024-11-01",
+        "endDate": "2024-11-07",
+        "dailySchedule": {
+          "Monday": {
+            "title": "Introduction to BJJ",
+            "description": "Basic guard positions."
+          },
+          "Wednesday": {
+            "title": "Escapes",
+            "description": "Learning fundamental escapes."
+          },
+          "Friday": {
+            "title": "Submissions",
+            "description": "Simple submission techniques."
+          }
+        }
+      },
+      {
+        "startDate": "2024-11-08",
+        "endDate": "2024-11-14",
+        "dailySchedule": {
+          "Monday": {
+            "title": "Guard Passing",
+            "description": "Techniques to pass the guard."
+          },
+          "Wednesday": {
+            "title": "Sweeps",
+            "description": "Introduction to basic sweeps."
+          },
+          "Friday": {
+            "title": "Submission Defense",
+            "description": "Basic defense techniques."
+          }
+        }
+      },
+      {
+        "startDate": "2024-11-15",
+        "endDate": "2024-11-21",
+        "dailySchedule": {
+          "Monday": {
+            "title": "Takedowns",
+            "description": "Basic takedown techniques."
+          },
+          "Wednesday": {
+            "title": "Chokes",
+            "description": "Learning basic choking submissions."
+          },
+          "Friday": {
+            "title": "Flow Rolling",
+            "description": "Light rolling to practice techniques."
+          }
+        }
+      }
+    ],
+    "9-12years old": [
+      {
+        "startDate": "2024-11-01",
+        "endDate": "2024-11-07",
+        "dailySchedule": {
+          "Monday": {
+            "title": "Introduction to BJJ",
+            "description": "Understanding guard positions."
+          },
+          "Wednesday": {
+            "title": "Escapes & Reversals",
+            "description": "Mastering basic escapes and reversals."
+          },
+          "Friday": {
+            "title": "Submissions",
+            "description": "Learning submissions from guard."
+          }
+        }
+      },
+      {
+        "startDate": "2024-11-08",
+        "endDate": "2024-11-14",
+        "dailySchedule": {
+          "Monday": {
+            "title": "Takedowns & Sweeps",
+            "description": "Introduction to sweeps and takedowns."
+          },
+          "Wednesday": {
+            "title": "Guard Passing",
+            "description": "Techniques to pass different guards."
+          },
+          "Friday": {
+            "title": "Submission Attacks",
+            "description": "Focusing on submission transitions."
+          }
+        }
+      },
+      {
+        "startDate": "2024-11-15",
+        "endDate": "2024-11-21",
+        "dailySchedule": {
+          "Monday": {
+            "title": "Takedowns",
+            "description": "Learning advanced takedown techniques."
+          },
+          "Wednesday": {
+            "title": "Chokes & Strangles",
+            "description": "Practicing various choking submissions."
+          },
+          "Friday": {
+            "title": "Rolling & Sparring",
+            "description": "Combining techniques in live sparring."
+          }
+        }
+      }
+    ],
+    "Adults": [
+      {
+        "startDate": "2024-11-01",
+        "endDate": "2024-11-07",
+        "dailySchedule": {
+          "Monday": {
+            "title": "Guard Basics",
+            "description": "Mastering fundamental guard positions."
+          },
+          "Wednesday": {
+            "title": "Sweeps & Escapes",
+            "description": "Focus on sweeps and escapes from guard."
+          },
+          "Friday": {
+            "title": "Fundamental Submissions",
+            "description": "Key submission techniques for beginners."
+          }
+        }
+      },
+      {
+        "startDate": "2024-11-08",
+        "endDate": "2024-11-14",
+        "dailySchedule": {
+          "Monday": {
+            "title": "Guard Passing",
+            "description": "Developing guard passing techniques."
+          },
+          "Wednesday": {
+            "title": "Submission Escapes",
+            "description": "Learning escapes from submission holds."
+          },
+          "Friday": {
+            "title": "Submission Chains",
+            "description": "Linking multiple submissions together."
+          }
+        }
+      },
+      {
+        "startDate": "2024-11-15",
+        "endDate": "2024-11-21",
+        "dailySchedule": {
+          "Monday": {
+            "title": "Takedown Mastery",
+            "description": "Mastering basic and advanced takedowns."
+          },
+          "Wednesday": {
+            "title": "Chokes & Submissions",
+            "description": "Learning key choking submission techniques."
+          },
+          "Friday": {
+            "title": "Flow Rolling",
+            "description": "Practicing techniques in live rolling."
+          }
+        }
+      }
+    ],
+    "Elite": [
+      {
+        "startDate": "2024-11-01",
+        "endDate": "2024-11-07",
+        "dailySchedule": {
+          "Monday": {
+            "title": "Advanced Guard Play",
+            "description": "Developing advanced guard techniques."
+          },
+          "Wednesday": {
+            "title": "Takedowns & Control",
+            "description": "Focus on control and takedowns."
+          },
+          "Friday": {
+            "title": "Submission Transitions",
+            "description": "Seamless submission transitions."
+          }
+        }
+      },
+      {
+        "startDate": "2024-11-08",
+        "endDate": "2024-11-14",
+        "dailySchedule": {
+          "Monday": {
+            "title": "Escape & Counter",
+            "description": "Escape and counterattack strategies."
+          },
+          "Wednesday": {
+            "title": "Leg Locks & Submissions",
+            "description": "Specializing in leg locks and submissions."
+          },
+          "Friday": {
+            "title": "Pressure Passing",
+            "description": "Pressure passing techniques."
+          }
+        }
+      },
+      {
+        "startDate": "2024-11-15",
+        "endDate": "2024-11-21",
+        "dailySchedule": {
+          "Monday": {
+            "title": "Submission Mastery",
+            "description": "Advanced submission chains and setups."
+          },
+          "Wednesday": {
+            "title": "Scrambling & Positioning",
+            "description": "Mastering scrambles and position control."
+          },
+          "Friday": {
+            "title": "Elite Sparring",
+            "description": "Live sparring at a competitive level."
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "classes": {
+    "TinyChampions": [
+      {
+        "startDate": "2024-11-25",
+        "endDate": "2024-11-29",
+        "dailySchedule": {
+          "Monday": {
+            "title": "Balance and coordination drills",
+            "description": "Focus on core stability and movement skills"
+          },
+          "Tuesday": {
+            "title": "Rolling basics",
+            "description": "Introduction to ground movement techniques"
+          },
+          "Wednesday": {
+            "title": "Intro to takedowns",
+            "description": "Learning fundamental takedown approaches"
+          },
+          "Thursday": {
+            "title": "Games and teamwork",
+            "description": "Interactive group activities to build social skills"
+          },
+          "Friday": {
+            "title": "Fundamental guard work",
+            "description": "Basic defensive positioning and techniques"
+          }
+        }
+      }
+    ]
+  }
+}
