@@ -12,7 +12,7 @@ const classes = [
 
 export default function HomePage() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen p-4">
+    <main className="flex items-center justify-center h-screen flex-col">
       <h1 className="text-2xl font-bold mb-8 text-center">Select Your Class</h1>
       <div className="grid grid-cols-1 gap-4 w-full max-w-sm">
         {classes.map((bjjclassName) => (

@@ -1,3 +1,4 @@
+import "../app/globals.css"; // Adjust the path based on where your CSS is located
 export const metadata = {
   title: "Jiu-Jitsu Gym Schedule",
   description: "Mobile-friendly app for managing Jiu-Jitsu classes",
