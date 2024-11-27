@@ -23,7 +23,7 @@ const ExercisePage = () => {
       {isLoading ? (
         <p>Loading exercises...</p>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-8 overflow-scroll mt-40">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-8 overflow-scroll">
           {exercises.map((exercise, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md p-6">
               <h2 className="text-xl font-bold mb-2">
