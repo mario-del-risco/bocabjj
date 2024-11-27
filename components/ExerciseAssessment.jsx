@@ -48,7 +48,7 @@ const ExerciseAssessment = ({ studentId, exercise }) => {
   };
 
   return (
-    <div className="mb-2 flex items-center gap-2 justify-center">
+    <div className="mb-2 flex flex-col items-center gap-2 justify-center">
       <div className="flex-1">{exercise.exerciseName}</div>
       <div className="flex space-x-2">
         <input

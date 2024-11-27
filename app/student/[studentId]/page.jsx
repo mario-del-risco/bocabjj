@@ -35,7 +35,7 @@ const StudentProfile = () => {
   }, [studentId]);
 
   return (
-    <div className="max-w-screen">
+    <div className="w-2/3">
       {student && (
         <div>
           <h2>{student.name}</h2>
