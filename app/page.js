@@ -1,7 +1,7 @@
 "use client";
 
 import ClassButton from "../components/ClassButton"; // Import the ClassButton component
-
+import Link from "next/link";
 const classes = [
   "TinyChampions",
   "6-9years old",
@@ -18,6 +18,18 @@ export default function HomePage() {
         {classes.map((bjjclassName) => (
           <ClassButton key={bjjclassName} className={bjjclassName} />
         ))}
+        <Link
+          href="/selectStudent"
+          className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-all"
+        >
+          Go to Student Selection
+        </Link>
+        <Link
+          href="/exercises"
+          className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-all"
+        >
+          Go to exercises
+        </Link>
       </div>
     </main>
   );
