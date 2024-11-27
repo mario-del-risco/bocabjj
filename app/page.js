@@ -28,7 +28,13 @@ export default function HomePage() {
           href="/exercises"
           className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-all"
         >
-          Go to exercises
+          Exercises
+        </Link>
+        <Link
+          href="/calendar"
+          className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-all"
+        >
+          Calendar
         </Link>
       </div>
     </main>
