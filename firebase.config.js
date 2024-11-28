@@ -8,14 +8,14 @@ import {
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBVvUI2kAxylNJK1jwCXcGPlwdZieiHSbo",
-  authDomain: "bocabjj-9900e.firebaseapp.com",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
   databaseURL: "https://bocabjj-9900e-default-rtdb.firebaseio.com",
-  projectId: "bocabjj-9900e",
-  storageBucket: "bocabjj-9900e.firebasestorage.app",
-  messagingSenderId: "676394560727",
-  appId: "1:676394560727:web:365e9b74bb2309995b9492",
-  measurementId: "G-XHL473P93H",
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
