@@ -77,9 +77,9 @@ body {
   .water-background {
     background: linear-gradient(
       45deg,
-      rgba(31, 59, 82, 0.2) 25%,
-      rgba(0, 0, 255, 0.1) 50%,
-      rgba(0, 119, 255, 0.2) 75%
+      rgba(167, 243, 208, 0.2) 25%,
+      /* soft green #A7F3D0 */ rgba(59, 130, 246, 0.1) 50%,
+      /* soft blue #3B82F6 */ rgba(31, 41, 55, 0.2) 75% /* slate #1E293B */
     );
     background-size: 200% 200%;
     animation: waterMotion 10s ease-in-out infinite;
