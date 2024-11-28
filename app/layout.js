@@ -1,13 +1,21 @@
-import "../app/globals.css"; // Adjust the path based on where your CSS is located
+// RootLayout.js
+import "./globals.css"; // Adjust the path based on where your CSS is located
+
 export const metadata = {
-  title: "Jiu-Jitsu Gym Schedule",
-  description: "Mobile-friendly app for managing Jiu-Jitsu classes",
+  title: "BocaBJJ.structuredCandela",
+  description: "CandelaJitsu",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-gray-100 text-gray-900 ">{children}</body>
+      <head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+      </head>
+      <body className="flex items-center justify-center text-gray-900 water-background">
+        <div className="w-full  p-4">{children}</div>
+      </body>
     </html>
   );
 }
