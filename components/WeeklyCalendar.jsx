@@ -136,72 +136,60 @@ const WeeklyCalendar = () => {
 
   return (
     <div className="min-h-screen p-4">
-      {user ? (
-        <>
-          <div className="sticky top-0 bg-white z-10 mb-4 shadow-sm py-2">
-            <select
-              className="w-full max-w-xs mx-auto block p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              value={selectedWeek || ""}
-              onChange={handleWeekChange}
-            >
-              <option value="" disabled>
-                Select a Week
+      <>
+        <div className="sticky top-0 bg-white z-10 mb-4 shadow-sm py-2">
+          <select
+            className="w-full max-w-xs mx-auto block p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            value={selectedWeek || ""}
+            onChange={handleWeekChange}
+          >
+            <option value="" disabled>
+              Select a Week
+            </option>
+            {Object.keys(calendarData).map((week) => (
+              <option key={week} value={week}>
+                Week {week}
               </option>
-              {Object.keys(calendarData).map((week) => (
-                <option key={week} value={week}>
-                  Week {week}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {selectedWeek && calendarData[selectedWeek] && (
-            <div className="container mx-auto">
-              <h2 className="text-2xl font-bold text-center mb-6">
-                Week {selectedWeek}
-              </h2>
-
-              <div className="flex flex-wrap -mx-2 justify-center">
-                {Object.entries(calendarData[selectedWeek])
-                  .filter(([key]) =>
-                    ["1", "2", "3", "4", "5", "6", "7"].includes(key)
-                  )
-                  .map(([day, data]) => renderDayCard(day, data))}
-              </div>
-
-              {calendarData[selectedWeek].bbe && (
-                <div className="bg-black text-white p-4 mt-6 rounded-lg text-center">
-                  <p className="text-xl font-extrabold">
-                    {calendarData[selectedWeek].bbe}
-                  </p>
-                  <p className="text-gray-400 text-sm">Black Belt Excellence</p>
-                </div>
-              )}
-            </div>
-          )}
-
-          {currentEditData && (
-            <InlineEditModal
-              isOpen={editModalOpen}
-              onClose={() => setEditModalOpen(false)}
-              initialData={currentEditData.data}
-              weekNumber={selectedWeek}
-              dayIndex={parseInt(currentEditData.day)}
-              group={currentEditData.group}
-            />
-          )}
-        </>
-      ) : (
-        <div className="container mx-auto text-center mt-16">
-          <h2 className="text-2xl font-bold mb-4">
-            Please sign in to view the calendar
-          </h2>
-          <p className="text-gray-600">
-            You need to be signed in to access the calendar and its editing
-            features.
-          </p>
+            ))}
+          </select>
         </div>
-      )}
+
+        {selectedWeek && calendarData[selectedWeek] && (
+          <div className="container mx-auto">
+            <h2 className="text-2xl font-bold text-center mb-6">
+              Week {selectedWeek}
+            </h2>
+
+            <div className="flex flex-wrap -mx-2 justify-center">
+              {Object.entries(calendarData[selectedWeek])
+                .filter(([key]) =>
+                  ["1", "2", "3", "4", "5", "6", "7"].includes(key)
+                )
+                .map(([day, data]) => renderDayCard(day, data))}
+            </div>
+
+            {calendarData[selectedWeek].bbe && (
+              <div className="bg-black text-white p-4 mt-6 rounded-lg text-center">
+                <p className="text-xl font-extrabold">
+                  {calendarData[selectedWeek].bbe}
+                </p>
+                <p className="text-gray-400 text-sm">Black Belt Excellence</p>
+              </div>
+            )}
+          </div>
+        )}
+
+        {currentEditData && (
+          <InlineEditModal
+            isOpen={editModalOpen}
+            onClose={() => setEditModalOpen(false)}
+            initialData={currentEditData.data}
+            weekNumber={selectedWeek}
+            dayIndex={parseInt(currentEditData.day)}
+            group={currentEditData.group}
+          />
+        )}
+      </>
     </div>
   );
 };
