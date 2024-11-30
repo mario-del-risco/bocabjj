@@ -1,10 +1,16 @@
 import mermaid from "mermaid";
-import BJJTechniqueGraph from "../../components/BJJTechniqueGraph";
+import BJJTechniqueFlowchart from "../../components/BJJTechniqueFlowchart";
+import VideoEmbed from "../../components/VideoEmbed";
 const Diagram = () => {
   return (
-    <>
-      <BJJTechniqueGraph />
-    </>
+    <div className="flex flex-col md:flex-row gap-4 mx-2">
+      <div className="w-full md:w-1/2">
+        <BJJTechniqueFlowchart />
+      </div>
+      <div className="w-full md:w-2/3">
+        <VideoEmbed />
+      </div>
+    </div>
   );
 };
 

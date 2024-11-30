@@ -11,8 +11,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="flex items-center justify-center text-gray-900 water-background">
-        <div className="w-full  p-4 h-screen">
-          <header className="flex justify-between items-center mb-4">
+        <div className="w-full ">
+          <header className="flex justify-between items-center mb-4 px-4 pt-2">
             <Link href="/" className="text-2xl font-bold">
               BocaBJJ
             </Link>
