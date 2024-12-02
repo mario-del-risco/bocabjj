@@ -5,8 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Parkinsans:wght@300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Niconne&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Parkinsans:wght@300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Share+Tech+Mono&family=Tangerine:wght@400;700&display=swap");
 /* Root theme for color scheme */
 :root {
   --background: #ffffff;
@@ -15,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #5489e5;
+    --background: #e8ecff;
     --foreground: #333;
   }
 }
@@ -24,17 +23,34 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Outfit", monospace;
+  font-family: "Share Tech Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  height: 100%;
+  width: 100%;
 }
 
+.tao {
+  font-family: "Tangerine", cursive;
+}
+
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 /* Additional styles for your specific components */
 .outfit-calendar {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
+  font-style: normal;
+}
+
+.niconne-regular {
+  font-family: "Niconne", cursive;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -96,4 +112,232 @@ body {
       background-position: 0% 0%;
     }
   }
+}
+
+.cherry-blossom-background {
+  background: linear-gradient(45deg, #ffe4e1, #ffc0cb);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Falling blossom animation */
+.blossom {
+  position: fixed;
+  background: #ffb6c1;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: fall 10s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+/* Falling Leaves Background */
+.leaves-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  background: linear-gradient(135deg, #d8d8d8, #dde5ff);
+  background-size: 400% 400%;
+  animation: gradientFlow 15s ease infinite;
+}
+
+/* Leaf Animation Keyframes */
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes drift {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Leaf Styles */
+.leaf {
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.6);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  animation: fall linear infinite, drift ease-in-out infinite;
+}
+
+/* Generate Leaves */
+.leaves-background .leaf:nth-child(1) {
+  left: 10%;
+  animation-delay: -1s;
+  animation-duration: 8s;
+}
+
+.leaves-background .leaf:nth-child(2) {
+  left: 20%;
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.leaves-background .leaf:nth-child(3) {
+  left: 30%;
+  animation-delay: -2.5s;
+  animation-duration: 9s;
+}
+
+.leaves-background .leaf:nth-child(4) {
+  left: 40%;
+  animation-delay: -4s;
+  animation-duration: 7s;
+}
+
+.leaves-background .leaf:nth-child(5) {
+  left: 50%;
+  animation-delay: -2s;
+  animation-duration: 11s;
+}
+
+.leaves-background .leaf:nth-child(6) {
+  left: 60%;
+  animation-delay: -3.5s;
+  animation-duration: 8.5s;
+}
+
+.leaves-background .leaf:nth-child(7) {
+  left: 70%;
+  animation-delay: -1.5s;
+  animation-duration: 9.5s;
+}
+
+.leaves-background .leaf:nth-child(8) {
+  left: 80%;
+  animation-delay: -4.5s;
+  animation-duration: 7.5s;
+}
+
+.leaves-background .leaf:nth-child(9) {
+  left: 90%;
+  animation-delay: -2.5s;
+  animation-duration: 10.5s;
+}
+
+.matrix-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensures the background stays behind the content */
+  overflow: hidden; /* Prevents overflowing content from showing */
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh);
+    opacity: 0.1;
+  }
+}
+
+.matrix-character {
+  position: absolute;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  color: #00ff41; /* Matrix green */
+  text-shadow: 0 0 5px #00ff41;
+  opacity: 0.7;
+  animation: fall linear infinite, glitch 0.5s infinite alternate;
+}
+
+@keyframes glitch {
+  0% {
+    transform: skew(-5deg);
+  }
+  50% {
+    transform: skew(5deg);
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+
+/* Variation in falling speed and delay */
+.matrix-background .matrix-character:nth-child(5n + 1) {
+  animation-duration: 5s;
+  animation-delay: -2s;
+}
+
+.matrix-background .matrix-character:nth-child(5n + 2) {
+  animation-duration: 6s;
+  animation-delay: -3s;
+}
+
+.matrix-background .matrix-character:nth-child(5n + 3) {
+  animation-duration: 7s;
+  animation-delay: -4s;
+}
+
+.matrix-background .matrix-character:nth-child(5n + 4) {
+  animation-duration: 8s;
+  animation-delay: -5s;
+}
+
+.matrix-background .matrix-character:nth-child(5n + 5) {
+  animation-duration: 9s;
+  animation-delay: -6s;
 }

@@ -37,3 +37,18 @@ export const updateCalendarData = async (weekNumber, dayIndex, updatedData) => {
     throw error;
   }
 };
+
+export const getTaoData = async () => {
+  const dbRef = ref(db, "Wisdom/tao"); // Replace with your data path
+  return new Promise((resolve, reject) => {
+    onValue(
+      dbRef,
+      (snapshot) => {
+        resolve(snapshot.val());
+      },
+      (error) => {
+        reject(error);
+      }
+    );
+  });
+};

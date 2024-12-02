@@ -101,7 +101,7 @@ const BJJTechniqueFlowchart = () => {
   };
 
   return (
-    <div className="max-w-full md:max-w-none bg-gradient-to-br from-black to-blue-800 rounded-2xl shadow-lg p-4">
+    <div className="max-w-full md:max-w-none bg-gradient-to-br from-slate-900 to-blue-800 rounded-2xl shadow-lg p-4 m-2">
       <h2 className="text-2xl font-bold text-center text-white mb-6">
         Single Leg Takedown Flow
       </h2>
@@ -118,7 +118,7 @@ const BJJTechniqueFlowchart = () => {
             >
               <div className="text-4xl mr-4">{step.icon}</div>
               <div className="flex-grow">
-                <h3 className="font-bold text-lg text-blue-800">
+                <h3 className="font-bold text-lg text-slate-900">
                   {step.title}
                 </h3>
               </div>
@@ -159,10 +159,6 @@ const BJJTechniqueFlowchart = () => {
             )}
           </div>
         ))}
-      </div>
-
-      <div className="mt-6 text-center text-sm text-gray-600">
-        Tap each step to explore details
       </div>
     </div>
   );
